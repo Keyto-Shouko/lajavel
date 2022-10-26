@@ -1,11 +1,9 @@
-package controller;
+package app.controller;
 
-import facade.Log;
 import facade.Response;
 import lajavel.View;
-import model.Person;
+import app.model.Person;
 
-import java.lang.reflect.Array;
 import java.util.Map;
 
 public class IndexController extends Controller {

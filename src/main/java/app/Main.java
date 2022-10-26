@@ -1,8 +1,7 @@
 package app;
-import controller.IndexController;
+import app.controller.IndexController;
 import enums.HttpVerbs;
 import lajavel.*;
-import model.Person;
 
 public class Main {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException {

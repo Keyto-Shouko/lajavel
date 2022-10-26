@@ -1,8 +1,7 @@
 package lajavel;
 
-import controller.Controller;
+import app.controller.Controller;
 import enums.HttpVerbs;
-import facade.Log;
 import facade.Response;
 import io.javalin.http.Context;
 
