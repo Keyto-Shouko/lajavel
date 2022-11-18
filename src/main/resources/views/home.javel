@@ -8,11 +8,8 @@
 
     <title>Document</title>
 </head>
-<body  id="body" class="toggleBG">
-    <div class="loader">
-        <img id="loadingImage" src="/img/pepoOMG.png" alt="" srcset="">
-    </div>
-    <div id="wholePage" class="toggleClassDisplay">
+<body  id="body" class="">
+    <div id="wholePage" class="">
         <div class="topnav">
             <a class="active" href="/">Home</a>
             <a href="/partners">Partners</a>
@@ -20,12 +17,12 @@
             <a href="/about">About</a>
         </div>
         <div id="cursedImages">
-            <a href="https://github.com/DamienDabernat/Lajavel/" target="_blank"><img src="/img/indexBackground.png" alt="" srcset=""></a>
+             <a href="https://github.com/DamienDabernat/Lajavel/" target="_blank"><img src="/img/indexBackground.png" alt="" srcset=""></a>
         </div>
         <footer id="footer">
 
         </footer>
     </div>
-    <script src="/js/index.js"></script>
+    <script src="/js/home.js"></script>
 </body>
 </html>

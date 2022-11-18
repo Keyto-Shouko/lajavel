@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body id="body" class="">
+    <div id="wholePage" class="">
+        <div class="topnav">
+            <a href="/home">Home</a>
+            <a class="active" href="/partners">Partners</a>
+            <a href="/contributors">Contributors</a>
+            <a href="/about">About</a>
+        </div>
+        <div id="speech">
+            <p>
+                We wanted to say a huge thanks to all of our partners who supports and contributes to this project. They
+                make it work, and they make it better </br>
+            </p>
+        </div>
+        <div class="leftCard">
+            Thanks to {{partner1.label}} for promoting our project and using it daily to make it rise ! </br>
+            "Casting became so easy with Lajavel" ~{{partner1.label}} 2022
+        <div class="card">
+            <img src="{{partner1.picture}}" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>{{partner1.label}}</b></h4>
+                <p>Streamer & Caster</p>
+            </div>
+        </div>
+    </div>
+    <div class="rightCard">
+        Shoutout to {{partner2.label}}, he uses Lajavel everyday on his projects ! </br>
+        "It makes them squeaky clean" he says
+    <div class="card">
+        <img src="{{partner2.picture}}" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>{{partner2.label}}</b></h4>
+            <p>Gamer & Engineer</p>
+        </div>
+    </div>
+    </div>
+    <div class="leftCard">
+        "Thanks to Lajavel, my coding skills improved quickly" ~{{partner3.label}} 2022
+    <div class="card">
+        <div class="container">
+            <img src="{{partner3.getPartnerPicture()}}" alt="Avatar" style="width:100%">
+            <h4><b>{{partner3.label}}</b></h4>
+            <p>Chad</p>
+        </div>
+    </div>
+    </div>
+
+     <div class="rightCard">
+            Shoutout to {{partner4.label}} for using Lajavel ! </br>
+            "Lajavel changed my life, i'm now happy" ~{{partner4.label}} 2022
+        <div class="card">
+            <img src="{{partner4.picture}}" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>{{partner4.label}}</b></h4>
+                <p>Builder & Youtuber</p>
+            </div>
+        </div>
+        </div>
+    <footer id="footer">
+
+    </footer>
+    <script src="/js/partners.js"></script>
+    </div>
+</body>
+
+</html>

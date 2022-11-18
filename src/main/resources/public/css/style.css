@@ -1,0 +1,295 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#floppaImage{
+    height:300px;
+    width:300px;
+}
+#cursedImages {
+    position: relative;
+    margin-left: 22%;
+    margin-right: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+#topnavChad{
+    background-color: #3d3d5c;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: purple;
+    color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  #loadingImage{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 10%;
+    z-index: 10;
+    animation-name: rotate-animation;
+    animation-duration: 2.5s;
+  }
+
+  .toggleClassDisplay{
+    display: none;
+  }
+  .toggleBG{
+    background-color: #333;
+  }
+
+
+  @keyframes rotate-animation {
+    10% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+    1000% {
+        transform: rotate(0deg);
+    }
+
+    }
+
+    .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      height:500px;
+      width:300px;
+      margin-left: 10%;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      transform: scale(1.02);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+      padding: 2px 16px;
+    }
+
+    .leftCard{
+        margin-left : 10%;
+        margin-top : 4%;
+        font-size: 18px;
+    }
+
+    .rightCard{
+        margin-left : 50%;
+        margin-top : 4%;
+        font-size: 18px;
+    }
+
+    #speech{
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #smallImg{
+        height : 120px;
+        width : 120px;
+    }
+
+    #aboutLogo{
+        position : absolute;
+        right : 0px;
+    }
+
+    #cheers{
+        margin-top: -35px;
+        margin-left: 150px;
+    }
+
+    #title{
+        text-align : center;
+        line-height: 100px;
+        height: 30px;
+
+    }
+    #title>img{
+        height : 120px
+    }
+
+    .main {
+      position: relative;
+      border: 1px dotted #000000;
+      border-radius: 50%;
+      width: 500px;
+      height: 500px;
+      top: 150px;
+      left: 30%;
+    }
+
+    .circle {
+      position: absolute;
+      left: calc(50% - 25px);
+      top: calc(50% - 25px);
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    .circle:nth-child(4) {
+      transform: translateX(250px);
+      left: 180px;
+      top: 60px;
+    }
+
+    .circle:nth-child(2) {
+      left: -60px;
+      top: 60px;
+    }
+
+    .circle:nth-child(3) {
+      top: 460px;
+      left: calc(45% - 20px);
+    }
+
+
+    .circle>img {
+      height: 120px;
+      width: 120px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .main>img{
+      top: 70px;
+    position: relative;
+    left: 60px;
+    }
+
+    #started{
+    position: relative;
+    margin-top: 330px;
+    margin-left: 5%;
+    text-align: center;
+    }

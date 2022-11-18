@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body id="body" class="">
+    <div id="wholePage" class="">
+        <div class="topnav">
+            <a href="/home">Home</a>
+            <a href="/partners">Partners</a>
+            <a href="/contributors">Contributors</a>
+            <a class="active" href="/about">About</a>
+        </div>
+        <h1 id="title"><img  src="/img/pepeCheers.gif" alt="" srcset="">Some stats about Lajavel (provided by Pepe)
+            <img  src="/img/pepeCheers.gif" alt="" srcset=""></h1>
+        <div class="main"><img src="/img/lajavel.png" alt="" srcset="">
+            <div class="circle"><img src="/img/pepeAmazing.gif" alt="" srcset="">Lajavel is used by 18 million people !
+            </div>
+            <div class="circle"><img src="/img/pepeSunglasses.png" alt="" srcset="">In 2024, Lajavel will surpass
+                Laravel by far</div>
+            <div class="circle"><img src="/img/pepeOK.png" alt="" srcset="">98% of Lajavel users are satisfied !</div>
+        </div>
+
+        <div id="started">
+            To use Lajavel, start the server by simply writing : Application.start(8080);</br>
+            Then you can register any route you want : </br>
+            <img src="/img/started.png" alt="" srcset="">
+        </div>
+        <footer id="footer">
+
+        </footer>
+        <script src="/js/partners.js"></script>
+    </div>
+</body>
+
+</html>

@@ -8,4 +8,10 @@ public class Partner {
         this.label = label;
         this.picture = picture;
     }
+
+    public String getPartnerPicture() {
+        return "https://avatars.dicebear.com/api/miniavs/"+this.label+".svg";
+    }
+
+
 }

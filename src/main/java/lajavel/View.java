@@ -16,30 +16,32 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class View {
+    //viewName : name of the Javel file, entries : a map of object -> the object name (person1) and it's associated person obj
     public static String make(String viewName, Map.Entry<String,Object>... entries) throws NoSuchFieldException, IllegalAccessException, NoSuchMethodException {
-        String rawHtml = View.getViewContentFromName(viewName);
-        Matcher matcher = Pattern.compile("\\{\\{(.*?)\\}\\}").matcher(rawHtml);
-        StringBuffer sb = new StringBuffer();
-        while (matcher.find()) {
+        String rawHtml = View.getViewContentFromName(viewName); //get the HTML
+        Matcher matcher = Pattern.compile("\\{\\{(.*?)\\}\\}").matcher(rawHtml); //Find specific content in the HTML
+        StringBuffer sb = new StringBuffer(); //will stock content
+        while (matcher.find()) { //while regex match proceed
             boolean isMethod = false;
-            String rawStringWithoutSpace = matcher.group(1).replaceAll("\\s+", ""); //replace spaces inside {}
+            String rawStringWithoutSpace = matcher.group(1).replaceAll("\\s+", ""); //replace spaces inside {{}}
             String[] objectAndProperty = rawStringWithoutSpace.split("\\."); //get the class before the . and then property after the .
             if(objectAndProperty.length <= 1){
                 throw new RuntimeException("you must specify an object and a property in your html");
             }
 
-            String objectName = objectAndProperty[0];
-            Log.info("objectName : "+objectName);
-            String objectProperty = objectAndProperty[1];
-            Log.info("objectProperty : "+objectProperty);
+            String objectName = objectAndProperty[0]; //the object (for example partner)
+            String objectProperty = objectAndProperty[1]; //the property (for example name or a method)
             for(Map.Entry<String,Object> entry : entries){
+                //if the key (partner for example) matches the objectName above, proceed
                 if(entry.getKey().equals(objectName)){
-                    Log.info("pouet " + entry.getKey());
+                    //First, It replaces compiled character or word with given input sequence, and
+                    // then it appends the given replacement string to the string buffer.
                     matcher.appendReplacement(sb,View.getValueOf(objectProperty,entry.getValue()));
                     break;
                 }
             }
         }
+        //This method reads the input string and appends it to the given StringBuilder at the tail position.
         matcher.appendTail(sb);
         return sb.toString();
     }
